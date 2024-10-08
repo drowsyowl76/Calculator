@@ -13,10 +13,10 @@
    인수는 'a+bj' 또는 'a-bj' 형식의 문자열이어야 합니다.
 - `utils.py`: 계산에 사용되는 유틸리티 함수들이 포함되어 있습니다. 결과 반올림(`round_result`)과 각도 변환(`convert_to_radians`) 함수가 있습니다.
 
-## 사용법
+# 사용 예시
 
-### 기본 계산기
-python
+## 기본 계산기
+```python
 from calculator import Calculator
 
 calc = Calculator()
@@ -24,10 +24,10 @@ print(calc.add(1, 2, 3))  # 출력: 6
 print(calc.subtract(10, 5))  # 출력: 5
 print(calc.multiply(2, 4, 6))  # 출력: 48
 print(calc.divide(10, 2))  # 출력: 5
+```
 
-
-### 공학용 계산기
-python
+## 공학용 계산기
+```python
 from calculator import EngineeringCalculator
 
 eng_calc = EngineeringCalculator()
@@ -35,10 +35,10 @@ print(eng_calc.square_root(16))  # 출력: 4.0
 print(eng_calc.power(2, 3))  # 출력: 8.0
 print(eng_calc.log(100, base=10))  # 출력: 2.0
 print(eng_calc.sin(30, angle_unit='degree'))  # 출력: 0.5
+```
 
-
-### 복소수 계산기
-python
+## 복소수 계산기
+```python
 from calculator import ComplexCalculator
 
 comp_calc = ComplexCalculator()
@@ -46,3 +46,6 @@ print(comp_calc.add("1+2j", "3+4j"))  # 출력: (4+6j)
 print(comp_calc.magnitude("3+4j"))  # 출력: 5.0
 print(comp_calc.argument("1+1j"))  # 출력: 0.7853981633974483 (라디안)
 print(comp_calc.to_polar("1+1j"))  # 출력: (1.4142135623730951, 0.7853981633974483)
+```
+
+
