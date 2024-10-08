@@ -20,7 +20,8 @@ if __name__ == "__main__":
     print(eng_calc.sin(30, angle_unit='degree'))  # 출력: 0.5
     print("-------------Complex_Calculator_Example------------------")
     comp_calc = ComplexCalculator()
-    print(comp_calc.add("1+2j", "3+4j"))  # 출력: (4+6j)
+    print(comp_calc.add("1+2j", "3+4j","5+20j"))  # 출력: (4+6j)
     print(comp_calc.magnitude("3+4j"))  # 출력: 5.0
     print(comp_calc.argument("1+1j"))  # 출력: 0.7853981633974483 (라디안)
     print(comp_calc.to_polar("1+1j"))  # 출력: (1.4142135623730951, 0.7853981633974483)
+    print(comp_calc.to_rectangular(1,45,angle_unit="degree"))
